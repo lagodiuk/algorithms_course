@@ -1,6 +1,8 @@
+# Java binaries #
 *.class
-
-# Package Files #
 *.jar
 *.war
 *.ear
+
+# Erlang binaries #
+*.beam
