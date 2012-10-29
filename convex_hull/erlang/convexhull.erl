@@ -66,7 +66,7 @@ create_convex_hull([Pc | T], [Pb, Pa | Tch] = ConvexHull) when length(ConvexHull
 	Vab = vector_from_points(Pa, Pb),
 	Vbc = vector_from_points(Pb, Pc),
 	Prod = pseudoscalar_product(Vab, Vbc),
-	case Prod > 0 of
+	case Prod >= 0 of
 		true ->
 			create_convex_hull(T, [Pc | ConvexHull]);
 		false ->
